@@ -5,9 +5,11 @@ import (
 )
 
 func main() {
-	// var cards string = "Ace of spades"
-	cards := "Ace of spades"
-	cards = "Five of diamonds"
+	cards := getCard()
 	fmt.Println(cards)
 
+}
+
+func getCard() string {
+	return "Ace of spades"
 }
