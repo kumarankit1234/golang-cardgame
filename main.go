@@ -1,13 +1,9 @@
 package main
 
-import (
-	"fmt"
-)
-
 func main() {
-	cards := getCard()
-	fmt.Println(cards)
 
+	cards := deck{"Ace of diamond", getCard()}
+	cards.print()
 }
 
 func getCard() string {
