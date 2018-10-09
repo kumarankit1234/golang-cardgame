@@ -5,15 +5,8 @@ import (
 )
 
 func main() {
-	// cards := newDeck()
-	// hand, remaingCards := deal(cards, 5)
 
-	// hand.print()
-	// fmt.Println()
-	// remaingCards.print()
-
-	greeting := "Hi there"
-
-	fmt.Println([]byte(greeting))
+	cards := newDeckFromFile("/Users/ankit.sin/my-cards.txt")
+	fmt.Println(cards.toString())
 
 }
